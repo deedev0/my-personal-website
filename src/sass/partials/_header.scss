@@ -1,0 +1,44 @@
+@use '../abstract/variables' as var;
+@use '../abstract/mixins' as mix;
+
+header {
+  @include mix.font-family(Itim, cursive);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 80px;
+  z-index: 1000;
+  display: flex;
+  background-color: #fff;
+  justify-content: space-around;
+  align-items: center;
+  padding: var.$standart-padding-10;
+
+  .header__title {
+    font-size: var.$font-size-brand;
+  }
+
+  nav {
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      li {
+        font-weight: bold;
+        font-size: var.$font-size-nav;
+        padding: var.$standart-padding-15;
+
+        a {
+          text-decoration: none;
+          color: black;
+
+          &:hover {
+            background-color: var.$background-color;
+          }
+        }
+      }
+    }
+  }
+}

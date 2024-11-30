@@ -1,0 +1,10 @@
+@use '../abstract/variables' as var;
+@use '../abstract/mixins' as mix;
+
+hr {
+  width: 20%;
+  height: 2px;
+  border: none;
+  background-color: var.$primary-color;
+  margin: 0 auto;
+}

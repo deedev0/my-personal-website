@@ -1,0 +1,25 @@
+@use '../abstract/variables' as var;
+@use '../abstract/mixins' as mix;
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+
+  input:focus, select:focus, textarea:focus {
+    border-color: var.$background-color; 
+    outline: none; 
+  }
+
+  input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid var.$primary-color;
+  }
+
+  textarea {
+    border: 1px solid var.$primary-color;
+    padding: 10px;
+  }
+
+}

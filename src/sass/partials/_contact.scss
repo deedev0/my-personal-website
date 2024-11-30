@@ -1,0 +1,30 @@
+@use '../abstract/variables' as var;
+@use '../abstract/mixins' as mix;
+
+.contact {
+  display: flex;
+  scroll-margin-top: 80px;
+  margin-top: 30px;
+  gap: 15px;
+  padding: var.$standart-padding-15;
+
+  .contact__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    h2 {
+      @include mix.font-family();
+      font-weight: bold;
+      font-size: 32px;
+    }
+  }
+  
+  figure {
+    flex: 1;
+    img {
+      width: 100%;
+    }
+  }
+}

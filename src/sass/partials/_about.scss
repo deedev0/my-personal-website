@@ -1,0 +1,43 @@
+@use '../abstract/variables' as var;
+@use '../abstract/mixins' as mix;
+
+.about {
+  @include mix.font-family();
+  position: relative;
+  scroll-margin-top: 80px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: var.$primary-color;
+  padding: var.$standart-padding-15;
+
+  img {
+    width: 500px;
+    border-radius: 15px;
+  }
+
+  .about__content {
+    display: flex;
+    flex-direction: column;
+    padding: var.$standart-padding-15;
+
+    h2 {
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      margin: 10px 0;
+      font-size: 24px;
+    }
+
+    button {
+      align-self: flex-start;
+      background-color: #fff;
+    }
+
+    a {
+      color: black;
+    }
+  }
+}

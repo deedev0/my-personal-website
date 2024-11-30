@@ -1,0 +1,42 @@
+@use '../abstract/variables' as var;
+@use '../abstract/mixins' as mix;
+
+.welcome {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  margin-top: 50px;
+  padding: var.$standart-padding-15;
+
+  img {
+    width: 650px;
+    padding: var.$standart-padding-15;
+  }
+
+  .welcome-message {
+
+    h1 {
+      font-size: 48px;
+    }
+
+    p {
+      @include mix.font-family();
+      margin: 15px 0;
+      font-size: 18px;
+    }
+
+    button {
+      margin-top: 15px;
+
+      &:hover {
+        background-color: var.$background-color;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+}
