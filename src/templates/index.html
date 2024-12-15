@@ -12,13 +12,14 @@
     <div class="header__title">
       <h1>dee.dev_</h1>
     </div>
-    <nav>
-      <ul>
-        <li><a href="#">HOME</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#skills">SKILLS</a></li>
-        <li><a href="#portfolio">PORTFOLIO</a></li>
-        <li><a href="#contact">CONTACT</a></li>
+    <button id="menu" class="header__menu">☰</button>
+    <nav id="drawer" class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#">HOME</a></li>
+        <li class="nav__item"><a href="#about">ABOUT</a></li>
+        <li class="nav__item"><a href="#skills">SKILLS</a></li>
+        <li class="nav__item"><a href="#portfolio">PORTFOLIO</a></li>
+        <li class="nav__item"><a href="#contact">CONTACT</a></li>
       </ul>
     </nav>
   </header>
@@ -55,7 +56,7 @@
           <h1>MY SKILLS</h1>
           <hr>
         </div>
-        <h1 class="skills__info">PROGRAMMING LANGUANGE</h1>
+        <h1 class="skills__info">PROGRAMMING LANGUANGES</h1>
         <div class="skills__content">
           <article class="skills__content__title">
             <ul style="list-style-type: square;">
@@ -178,11 +179,12 @@
        <section class="contact" id="contact">
         <div class="contact__content">
           <h2>Contact Me</h2>
-          <form action="" class="form-group">
-            <input type="text" placeholder="Name" autocomplete="off">
-            <input type="email" placeholder="Email" autocomplete="off">
-            <textarea name="comment" id="" rows="10" placeholder="Say something..."></textarea>
-            <button class="btn">SEND MESSAGE</button>
+          <form action="https://api.web3forms.com/submit" class="form-group" method="POST">
+            <input type="hidden" name="access_key" value="c4f572d5-58b5-46f4-8c08-920fa5c75d6d">
+            <input type="text" placeholder="Name" autocomplete="off" name="name">
+            <input type="email" placeholder="Email" autocomplete="off" name="email">
+            <textarea name="message" id="" rows="10" placeholder="Say something..."></textarea>
+            <button class="btn" type="submit">SEND MESSAGE</button>
           </form>
         </div>
         <figure>
@@ -198,19 +200,19 @@
       <aside class="footer__follow">
         <h3>Follow Me On</h3>
         <div class="icons">
-          <a href=""><i class="fab fa-instagram"></i></a>
-          <a href=""><i class="fab fa-youtube"></i></a>
-          <a href=""><i class="fab fa-instagram"></i></a>
-          <a href=""><i class="fab fa-github"></i></a>
-          <a href=""><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/dee.dev_" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@dee.dev0" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.tiktok.com/@dee.dev_" target="_blank"><i class="fab fa-tiktok"></i></a>
+          <a href="https://github.com/deedev0" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/dede-rahmat-643274190" target="_blank"><i class="fab fa-linkedin"></i></a>
         </div>
       </aside>
       <aside class="footer__certificate">
-        <h3>Certificate & Training By:</h3>
-        <img src="./images/skills/dicoding.png" alt="image logo dicoding">
+        <h3>Certificate & Training By</h3>
+        <a href="https://dicoding.com" target="_blank"><img src="./images/skills/dicoding.png" alt="image logo dicoding"></a>
       </aside>
       <aside class="footer__builded">
-        <h3>Website Builded By:</h3>
+        <h3>Website Builded By</h3>
         <figure>
           <img src="./images/skills/html5.png" alt="logo">
           <img src="./images/skills/css3.png" alt="logo">

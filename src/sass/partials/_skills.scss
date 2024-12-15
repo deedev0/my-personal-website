@@ -17,6 +17,7 @@
     font-size: 28px;
     padding: var.$standart-padding-10;
     color: white;
+    text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.2);
     margin-top: 50px;
   }
 
@@ -64,14 +65,27 @@
   @media screen and (max-width: 768px) {
     flex-direction: column;
     gap: 0;
+
+    .skills__title {
+      h1 {
+        font-size: 28px;
+      }
+    }
     .skills__info {
       font-size: 18px;
+      width: 100%;
     }
 
     .skills__content {
       flex-direction: column;
+      li {
+        font-size: 18px;
+      }
       .images__list {
         margin: 30px 0;
+        img {
+          max-width: 80px;
+        }
       }
     }
   }

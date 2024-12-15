@@ -46,4 +46,16 @@
     flex-direction: column;
     gap: 0;
   }
+
+  @media screen and (max-width: 768px) {
+    .about__content {
+      h2 {
+        font-size: 28px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+    }
+  }
 }

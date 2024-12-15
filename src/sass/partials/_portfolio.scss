@@ -138,4 +138,40 @@
       }
     }
   }
+  @media screen and (max-width: 768px) {
+    .portfolio__title {
+      h1 {
+        font-size: 28px;
+      }
+    }
+
+    .portfolio__contents {
+      .portfolio__content {
+        .portfolio__details {
+          p {
+            font-size: 18px;
+          }
+          h2 {
+            font-size: 28px;
+          }
+        }
+      }
+    }
+
+    .certificate {
+      .certificate__title {
+        h1 {
+          font-size: 28px;
+        }
+      }
+
+      .certificate__contents {
+        .certificate__content {
+          h3 {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
 }

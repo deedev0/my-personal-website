@@ -42,8 +42,13 @@ footer {
       display: flex;
       flex-direction: column;
       align-items: center;
-      img {
-        width: 30%;
+      text-align: center;
+      a {
+        display: inline-flex !important;
+        justify-content: center;
+        img {
+          width: 30%;
+        }
       }
     }
     .footer__builded {
@@ -64,15 +69,39 @@ footer {
 
     @media screen and (max-width: 768px) {
       flex-direction: column;
+        h3 {
+          font-size: 20px;
+        }
+        .footer__follow {
+          .icons {
+            a {
+              font-size: 44px;
+            }
+          }
+        }
+        .footer__builded {
+          figure {
+            justify-content: center;
+            img {
+              width: 12%;
+            }
+          }
+        }
     }
   }
-
+  
 }
 
 .footer__end {
   @include mix.font-family();
   text-align: center;
   font-size: 28px;
+  padding: 15px;
+  font-weight: bold;
   color: black;
   background-color: var.$background-color;
+
+  @media screen and (max-width: 768px) {
+    font-size: 18px;
+  }
 }
