@@ -59,4 +59,20 @@
       }
     }
   }
+
+  
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    gap: 0;
+    .skills__info {
+      font-size: 18px;
+    }
+
+    .skills__content {
+      flex-direction: column;
+      .images__list {
+        margin: 30px 0;
+      }
+    }
+  }
 }

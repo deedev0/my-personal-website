@@ -24,7 +24,8 @@
   .portfolio__contents {
     display: flex;
     flex-direction: column;
-    margin-top: 30px;
+
+
 
     .portfolio__content {
       display: flex;
@@ -34,6 +35,7 @@
 
       img {
         width: 50%;
+        height: 50%;
         border: 1px solid var.$primary-color;
         border-radius: 15px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -56,8 +58,25 @@
           background-color: #fff;
           color: black;
           align-self: baseline;
+
+          a {
+            color: black;
+          }
         }
       }
+
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    .reverse-content {
+      flex-direction: column-reverse;
     }
   }
 
@@ -103,6 +122,18 @@
         .btn {
           background-color: #fff;
           color: black;
+
+          a {
+            color: black;
+          }
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+
+        .certificate__content {
+          margin-top: 15px;
         }
       }
     }
